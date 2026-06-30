@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "description": "论文查询助手 - 基于 Dify 工作流",
   "private": true,
+  "proxy": "http://localhost:3001",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server/index.js",
-    "client": "react-scripts start"
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "start": "node server.js"
   },
   "dependencies": {
     "concurrently": "^8.2.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
