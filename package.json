@@ -1,0 +1,33 @@
+{
+  "name": "paper-query-assistant",
+  "version": "1.0.0",
+  "description": "论文查询助手 - 基于 Dify 工作流",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "react-scripts start"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1",
+    "react-scripts": "5.0.1",
+    "uuid": "^9.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
